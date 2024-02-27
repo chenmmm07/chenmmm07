@@ -16,21 +16,28 @@
   <meta name="author" content="Chenmmm">
   <meta name="keywords" content="">
   
-    <meta name="description" content="什么是SoraSora 是 OpenAI最新创新的一种最先进的文本到视频（text-to-video）模型，代表了人工智能和内容创作领域的重大飞跃。Sora 建立在类似于其他 OpenAI 模型中使用的 transformer 架构之上，将图像和视频视为 patches 的集合，类似于语言模型中处理 token 的方式。这种创新方法使 Sora 能够制作长达 60 秒的高度详细的视频，具有具有多个">
+    <meta name="description" content="由于 OpenAI 和 Midjourney 等服务采用了 Stripe 的支付通道，而 Stripe 的支付通道在绑定&#x2F;支付时，会对客户的访问 IP 进行一个风控判断，如果客户的 IP （大部分情况下是代理）是很多人绑卡&#x2F;支付时使用过的 IP，就会被风控判定为欺诈风险过高，而拒绝客户绑定&#x2F;支付，stripe 会返回以下错误： Your card does not s">
 <meta property="og:type" content="article">
-<meta property="og:title" content="什么是SORA？一文带你搞懂Sora！！">
-<meta property="og:url" content="https://chenmmm07.github.io/chenmmm07/2024/02/20/sora/index.html">
+<meta property="og:title" content="ChatGPT绑卡失败？Openai绑卡被拒绝？如何使用远程环境进行绑定&#x2F;支付">
+<meta property="og:url" content="https://chenmmm07.github.io/chenmmm07/2024/02/05/fail-bind-card/index.html">
 <meta property="og:site_name" content="AI使用指南">
-<meta property="og:description" content="什么是SoraSora 是 OpenAI最新创新的一种最先进的文本到视频（text-to-video）模型，代表了人工智能和内容创作领域的重大飞跃。Sora 建立在类似于其他 OpenAI 模型中使用的 transformer 架构之上，将图像和视频视为 patches 的集合，类似于语言模型中处理 token 的方式。这种创新方法使 Sora 能够制作长达 60 秒的高度详细的视频，具有具有多个">
+<meta property="og:description" content="由于 OpenAI 和 Midjourney 等服务采用了 Stripe 的支付通道，而 Stripe 的支付通道在绑定&#x2F;支付时，会对客户的访问 IP 进行一个风控判断，如果客户的 IP （大部分情况下是代理）是很多人绑卡&#x2F;支付时使用过的 IP，就会被风控判定为欺诈风险过高，而拒绝客户绑定&#x2F;支付，stripe 会返回以下错误： Your card does not s">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-02-20T04:22:13.000Z">
-<meta property="article:modified_time" content="2024-02-27T14:58:35.563Z">
+<meta property="og:image" content="https://chenmmm07.github.io/chenmmm07/imgs/image-7.png#pic_left=600x">
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/917350779/a293d7ebba02e32a61e22828/screenshot-20231224-151905.png">
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/816508450/1ac3f578099ae2baaecbea5e/screenshot-20230827-204146.png">
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/848894438/cb92916ad907d4ecacaacaeb/screenshot-20231009-180548.png">
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/774758332/aeb34cf4c2e630e465ec5a64/%E6%88%AA%E5%B1%8F2023-06-30+12.03.26.png">
+<meta property="og:image" content="https://downloads.intercomcdn.com/i/o/774758443/096fab98db0f608628ac811d/1688097982772.jpg">
+<meta property="article:published_time" content="2024-02-05T04:22:13.000Z">
+<meta property="article:modified_time" content="2024-02-27T15:53:33.890Z">
 <meta property="article:author" content="Chenmmm">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chenmmm07.github.io/chenmmm07/imgs/image-7.png#pic_left=600x">
   
   
   
-  <title>什么是SORA？一文带你搞懂Sora！！ - AI使用指南</title>
+  <title>ChatGPT绑卡失败？Openai绑卡被拒绝？如何使用远程环境进行绑定/支付 - AI使用指南</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +219,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">什么是SORA？一文带你搞懂Sora！！</span>
+            <span id="subtitle">ChatGPT绑卡失败？Openai绑卡被拒绝？如何使用远程环境进行绑定/支付</span>
           
         </div>
 
@@ -223,8 +230,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-02-20 12:22" pubdate>
-          2024年2月20日 中午
+        <time datetime="2024-02-05 12:22" pubdate>
+          2024年2月5日 中午
         </time>
       </span>
     
@@ -235,7 +242,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          827 字
+          365 字
         
       </span>
     
@@ -246,7 +253,7 @@
         
         
         
-          7 分钟
+          4 分钟
         
       </span>
     
@@ -283,71 +290,28 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">什么是SORA？一文带你搞懂Sora！！</h1>
+            <h1 id="seo-header">ChatGPT绑卡失败？Openai绑卡被拒绝？如何使用远程环境进行绑定/支付</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="什么是Sora"><a href="#什么是Sora" class="headerlink" title="什么是Sora"></a>什么是Sora</h1><p>Sora 是 OpenAI最新创新的一种最先进的文本到视频（text-to-video）模型，代表了人工智能和内容创作领域的重大飞跃。Sora 建立在类似于其他 OpenAI 模型中使用的 transformer 架构之上，将图像和视频视为 patches 的集合，类似于语言模型中处理 token 的方式。这种创新方法使 Sora 能够制作长达 60 秒的高度详细的视频，具有具有多个角色、充满活力的情感和特定类型的动作的复杂场景，所有这些都严格遵循用户的提示。</p>
-<p>Sora 有以下能力：</p>
-<ul>
-<li>从简单到复杂的场景——既有现实的概念，也有超现实的概念。</li>
-<li>与背景相关的分层细节。</li>
-<li>单主题和多主题视频。</li>
-<li>模仿真实世界运动的特定类型的运动。</li>
-<li>视频主题中的情感细节。</li>
-<li>从静态图像输入创建视频。</li>
-<li>添加细节或扩展现有视频，循环播放甚至添加额外的帧。</li>
-<li>连接视频。</li>
-<li>将编辑应用于特定元素，如视觉样式。</li>
-<li>生成图像。</li>
-<li>三维一致性，确保拍摄对象即使在动态摄像机位置也能保持逼真。</li>
-<li>远距离相干性和物体持久性。</li>
-<li>虚拟世界的模拟。</li>
-</ul>
-<p>尽管有其优势，但Sora在模拟复杂空间和理解因果关系方面存在局限性。然而，它标志着朝着可以与现实世界场景交互并解决需要了解物理动力学和美学的问题的模型迈出了重要一步</p>
-<h1 id="对未来的影响"><a href="#对未来的影响" class="headerlink" title="对未来的影响"></a>对未来的影响</h1><p>Sora 和类似模式对未来的影响可能是深远的，彻底改变电影制作、营销、教育等行业。通过大幅减少制作视频内容所需的时间和资源，Sora 可以使视频制作民主化，使资源有限的创作者能够将他们的愿景变为现实。然而，与任何技术进步一样，将面临挑战，包括围绕内容创作的道德考虑和滥用的可能性。</p>
-<p>此外，Sora 还与 Meta 的 Emu Video、Stability AI 的 Stable Video Diffusion 和 Google 的 Lumiere 等其他重要参与者竞争，每个参与者都在 AI 视频生成领域提供独特的功能。与其前辈不同，Sora 受益于 OpenAI 广泛的研究和训练数据，整合了 DALL·E 3 确保与用户提示的相关性和准确性。</p>
-<p>总之，Sora 体现了人工智能驱动内容创作的下一次演变，有望释放新的创意可能性并改变我们制作和消费视频内容的方式。随着技术的成熟，必须密切监测其发展和影响，确保以负责任和合乎道德的方式使用该技术以造福社会。</p>
-<h1 id="Sora的使用"><a href="#Sora的使用" class="headerlink" title="Sora的使用"></a>Sora的使用</h1><p>目前官方还没有公布普通民众的使用通道，仅限内部人员使用。但是可以使用先尝试注册并使用GPT4，等Sora官方使用通道出来的时候再用同样的方法进行注册缴费，可点击<a href="https://chenmmm07.github.io/chenmmm07/2024/02/03/gpt/">ChatGPT注册指南</a>教你超简单方法注册GPT4！</p>
-<p>让我们来欣赏下OpenAI的最强作品吧！</p>
-<iframe 
-    src="https://cdn.openai.com/sora/videos/gold-rush.mp4"
-    width="800" 
-    height="450" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
-<iframe 
-    src="https://cdn.openai.com/sora/videos/zen-garden-gnome.mp4"
-    width="800" 
-    height="450" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
-<iframe 
-    src="https://cdn.openai.com/sora/videos/closeup-of-womans-eye.mp4"
-    width="800" 
-    height="450" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
-<iframe 
-    src="https://cdn.openai.com/sora/videos/dancing-kangaroo.mp4"
-    width="800" 
-    height="450" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
-<iframe 
-    src="https://cdn.openai.com/sora/videos/octopus-and-crab.mp4"
-    width="800" 
-    height="450" 
-    frameborder="0" 
-    allowfullscreen>
-</iframe>
-
-<p>更多的视频可以去OpenAI<a target="_blank" rel="noopener" href="https://openai.com/sora">官网</a>进行查看！</p>
+                <p>由于 OpenAI 和 Midjourney 等服务采用了 Stripe 的支付通道，而 Stripe 的支付通道在绑定&#x2F;支付时，会对客户的访问 IP 进行一个风控判断，如果客户的 IP （大部分情况下是代理）是很多人绑卡&#x2F;支付时使用过的 IP，就会被风控判定为欺诈风险过高，而拒绝客户绑定&#x2F;支付，stripe 会返回以下错误：</p>
+<p><strong>Your card does not support this type of purchase.</strong></p>
+<p>您的银行卡不支持这种购买类型。</p>
+<p><strong>Your card has been declined.</strong><br>您的卡已被拒绝。</p>
+<p>这个时候就需要一个美国家庭网络环境来进行绑定&#x2F;支付，避免因为 stripe 的 IP 判断而失败，具体的使用方法如下：</p>
+<h1 id="远程环境使用教程"><a href="#远程环境使用教程" class="headerlink" title="远程环境使用教程"></a>远程环境使用教程</h1><ol>
+<li><p><a target="_blank" rel="noopener" href="https://bewildcard.com/i/MIN69">在wildcard官网注册一张虚拟信用卡</a>，详细教程请查看：<a href="https://chenmmm07.github.io/chenmmm07/2024/02/03/gpt/">ChatGPT一键注册指南</a></p>
+</li>
+<li><p>登录远程环境<br>在登录后的「我的卡」页面，找到「远程环境」的入口，点击「登录远程环境」：<br><img src="/chenmmm07/imgs/image-7.png#pic_left=600x" srcset="/chenmmm07/img/loading.gif" lazyload><br><img src="https://downloads.intercomcdn.com/i/o/917350779/a293d7ebba02e32a61e22828/screenshot-20231224-151905.png" srcset="/chenmmm07/img/loading.gif" lazyload></p>
+</li>
+<li><p>启动 brave 浏览器<br>点击屏幕中央的 「Brave」，然后点击「LAUNCH SESSION」按钮：<br><img src="https://downloads.intercomcdn.com/i/o/816508450/1ac3f578099ae2baaecbea5e/screenshot-20230827-204146.png" srcset="/chenmmm07/img/loading.gif" lazyload></p>
+</li>
+</ol>
+<p>之后会登录到一个远程的浏览器环境。然后在浏览器地址栏输入对应的服务网址即可进行访问，每个浏览器环境有20分钟的使用时长：<br><img src="https://downloads.intercomcdn.com/i/o/848894438/cb92916ad907d4ecacaacaeb/screenshot-20231009-180548.png" srcset="/chenmmm07/img/loading.gif" lazyload></p>
+<ol start="4">
+<li>报错处理<br>如果重新登录遇到 Kasm Limit Exceeded For User 这类错误，不用担心，点击左边已经运行的 Session，点击 「Resume」即可恢复原来打开的窗口 。<br><img src="https://downloads.intercomcdn.com/i/o/774758332/aeb34cf4c2e630e465ec5a64/%E6%88%AA%E5%B1%8F2023-06-30+12.03.26.png" srcset="/chenmmm07/img/loading.gif" lazyload><br><img src="https://downloads.intercomcdn.com/i/o/774758443/096fab98db0f608628ac811d/1688097982772.jpg" srcset="/chenmmm07/img/loading.gif" lazyload></li>
+</ol>
 
                 
               </div>
@@ -367,12 +331,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/chenmmm07/2024/02/20/sora/" title="什么是SORA？一文带你搞懂Sora！！">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">什么是SORA？一文带你搞懂Sora！！</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/chenmmm07/2024/02/05/fail-bind-card/" title="ChatGPT绑卡失败？Openai绑卡被拒绝？如何使用远程环境进行绑定/支付">
-                        <span class="hidden-mobile">ChatGPT绑卡失败？Openai绑卡被拒绝？如何使用远程环境进行绑定/支付</span>
+                      <a href="/chenmmm07/2024/02/04/gpt-email-failed/" title="ChatGPT邮箱注册报错The email you provided is not supported解决方案">
+                        <span class="hidden-mobile">ChatGPT邮箱注册报错The email you provided is not supported解决方案</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -2,18 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chenmmm07.github.io/chenmmm07/2024/02/20/sora/</loc>
+    <loc>https://chenmmm07.github.io/chenmmm07/2024/02/04/gpt-email-failed/</loc>
     
-    <lastmod>2024-02-21</lastmod>
+    <lastmod>2024-02-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chenmmm07.github.io/chenmmm07/2024/02/03/gpt/</loc>
+    <loc>https://chenmmm07.github.io/chenmmm07/2024/02/05/fail-bind-card/</loc>
     
-    <lastmod>2024-02-21</lastmod>
+    <lastmod>2024-02-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chenmmm07.github.io/chenmmm07/2024/02/03/gpt-register/</loc>
+    
+    <lastmod>2024-02-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chenmmm07.github.io/chenmmm07/2024/02/20/sora/</loc>
+    
+    <lastmod>2024-02-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
